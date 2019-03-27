@@ -20,7 +20,8 @@
 
     {% if field.help_text %}
     <small class="form-text text-muted">
-        {{field.help_text}}
+        <!-- 设置safe不转义，避免显示 h5代码    -->
+        {{field.help_text|safe}}
     </small>
     {% endif %}
 </div>

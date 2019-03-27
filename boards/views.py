@@ -23,6 +23,7 @@ def new_topic(request, pk):
     if request.method == 'POST':
         form = NewTopicForm(request.POST)
         if form.is_valid():
+            # 还需要修改时，要加上 commit=False
             topic = form.save(commit=False)
             topic.board = board
             topic.starter = user

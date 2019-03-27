@@ -1,0 +1,14 @@
+body {
+    background-image: url(../img/vintage-leaves.png);
+}
+.logo {
+    font-family: 'Peralta', cursive;
+}
+.logo a {
+    color: rgb(0, 0, 0, .9);
+}
+
+.logo a:hover;
+.logo a:active {
+    text-decoration: none;
+}
