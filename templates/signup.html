@@ -1,13 +1,8 @@
 {% extends 'base.html' %}
 
-{% load static %}
-{% block stylesheet %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/account.css' %}">
-{% endblock %}
+{% block title %}Sign up to Django Boards{% endblock %}
 
-{% block body %}
-<div class="container">
-    <h1 class="text-center logo my-4"><a href="{% url 'home' %}">Django Board</a></h1>
+{% block content %}
     <div class="row justify-content-center">
         <div class="col-lg-8 col-md-10 col-sm-12">
             <div class="card">
@@ -20,13 +15,10 @@
                     </form>
                 </div>
                 <div class="card-footer text-muted text-center">
-                    Already have an account? <a href="#">Login In</a>
+                    Already have an account? <a href="{% url 'login' %}">Login In</a>
                 </div>
             </div>
         </div>
     </div>
-
-
-</div>
 
 {% endblock %}
